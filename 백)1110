@@ -1,0 +1,12 @@
+n=int(input())
+a=n
+c=0
+while True:
+    t=n//10
+    o=n%10
+    new=t+o
+    c+=1
+    n=o*10+new%10
+    if a==n:
+        break
+print(c)
